@@ -1,4 +1,4 @@
-package edspert_go1_lib
+package go_number
 
 func CekGanjilGenap(num int) string {
 
