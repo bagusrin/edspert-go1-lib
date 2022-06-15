@@ -1,13 +1,28 @@
 package ganjil_genap
 
-func CekBilangan(bil int) string {
+import (
+    "strconv"
+)
 
-	if bil%2 == 0 {
-		return "genap"
-	}else{
-		return "ganjil"
+func CekBilangan(bil ...int) string {
+
+	result := ""
+	
+	for _, i := range bil {
+
+		result += strconv.Itoa(i)+ ": "
+
+		if i%2 == 0 {
+			result += "genap"
+		}else{
+			result += "ganjil"
+		}
+
+		result += "\n"
+		
 	}
 
+	return result
 }
 
 func JustTest() string {
