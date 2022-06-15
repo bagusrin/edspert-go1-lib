@@ -1,11 +1,15 @@
-package edspert_go1_lib
+package ganjil_genap
 
-func CekGanjilGenap(num int) string {
+func CekBilangan(bil int) string {
 
-	if num%2 == 0 {
+	if bil%2 == 0 {
 		return "genap"
 	}else{
 		return "ganjil"
 	}
 
+}
+
+func JustTest() string {
+	return "Test"
 }
